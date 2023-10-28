@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phita Form</title>
+    <style>
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        fieldset {
+            margin-bottom: 5px;
+        }
+        #xxx {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome Jamal er Maa Pitha gore</h2>
+    <form>
+        <label for="name">Your Name:
+            <input id="name" type="text" placeholder="Your Name">
+        </label>
+
+        <label for="name">Your Email:
+            <input id="name" type="text" placeholder="Your Email">
+        </label>
+        
+        <fieldset>
+            <legend>Pick One Piths</legend>
+            <label for="">
+                <input type="radio" name="pitha" id="Chitoy">
+                Chitoy
+            </label>
+            <label for="">
+                <input type="radio" name="pitha" id="Vapa">
+                Vapa
+            </label>
+            <label for="">
+                <input type="radio" name="pitha" id="Coconut">
+                Coconut
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select one more Vortas</legend>
+            <label for="">
+                <input type="checkbox" name="vortha" id="sorisha">
+                Sorisha
+            </label>
+            <label for="">
+                <input type="checkbox" name="vortha" id="sutki">
+                Sutki
+            </label>
+            <label for="">
+                <input type="checkbox" name="vortha" id="dal">
+                Dal
+            </label>
+        </fieldset>
+        <label for="Special Instruction">Special Instruction:
+            <br>
+            <textarea name="" id="xxx" cols="30" rows="10"></textarea>
+        </label>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
