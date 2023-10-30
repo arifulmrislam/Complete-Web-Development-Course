@@ -1,0 +1,21 @@
+.main-nav {
+    color: orange;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding-left: 20px;
+    display: inline;
+}
+
+button {
+    border-radius: 5px;
+    background: #FD6E0A;
+}
+
+header {
+    font-size: 1.5rem;
+}
