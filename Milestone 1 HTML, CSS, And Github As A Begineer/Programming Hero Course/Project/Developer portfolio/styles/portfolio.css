@@ -13,6 +13,17 @@
     padding: 18px 36px;
     height: 64px;
 }
+.btn-primary-2 {
+    background: white;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FD6E0A;;
+    /* border: 0; */
+    border-radius: 5px;
+    border: 1px solid #FD6E0A;
+    padding: 18px 36px;
+    height: 64px;
+}
 .header {
     background: #fff8f3;
     background-image: url(../images/header_bg.png), url(../images/developer.png);
@@ -24,7 +35,7 @@
 nav {
     display:flex;
     justify-content: space-between;
-    margin: 50px 200px;
+    padding: 50px 200px;
 }
 
 .nav-title {
