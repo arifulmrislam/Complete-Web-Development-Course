@@ -115,3 +115,100 @@
     color: #757575;
 }
 
+/* Donate Plan styles */
+
+.donate-plan {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.donate-plan-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.plan {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.donate-plan-description {
+    color: #757575;
+    margin-bottom: 50px;
+}
+.donate-plan2 {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 50px;
+}
+.food {
+    margin-bottom: 20px;
+}
+.food-family-title {
+    padding: 10px;
+}
+.shelter {
+    margin-bottom: 20px;
+}
+.shelter-title {
+    background-color: rgb(173, 195, 214);
+    padding: 10px;
+}
+.education {
+    margin-bottom: 20px;
+}
+.education-title {
+    background-color: bisque;
+    padding: 10px;
+}
+
+/* Get my updates styles */
+.update-title {
+    font-size: 50px;
+    font-weight: 700;
+}
+button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    gap: 0;
+}
+
+button#legal:focus,
+button#individual:focus {
+    background: blue;
+    color: white;
+}
+
+.update {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.get-button {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding: 40px;
+    background-color: #FBECB2;
+}
+
+/* Footer styles */
+.footer {
+    background-color: black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-title {
+    color:#C70039;
+    text-align: center;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.footer-banner {
+    text-align: center;
+    color:#efe2de;
+    margin: 30px;
+}
