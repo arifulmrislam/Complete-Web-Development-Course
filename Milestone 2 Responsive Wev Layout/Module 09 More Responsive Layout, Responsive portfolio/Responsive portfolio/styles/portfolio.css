@@ -239,7 +239,7 @@ section {
 
 /* Responsive styles */
 @media screen and (max-width: 576px) {
-    .skills-container, .resume-content, .about-info-container, .contact{
+    nav, .banner, .skills-container, .resume-content, .about-info-container, .contact{
         flex-direction: column;
         padding: 10px 20px
     }
@@ -252,16 +252,27 @@ section {
     .contact input[type="text"],input[type="email"], textarea{
         padding: 0 0 0 5px;
     }
-    .banner-description{
-        font-size: 19px;
+    .nav-li{
+        flex-direction: column;
     }
     .banner-title{
         font-size: 60px;
     }
-    .nav{
-        align-items: 0;
-        display: flex;
-        padding: 50px 40px;
+    .banner{
+        margin: 0 20px;
+    }
+    .header{
+        background-image: none;
+    }
+    .btn-primary-2{
+        display: none;
+    }
+    .btn-primary{
+        padding: 5px 20px;
+        font-size: 16px;
+    }
+    .banner img{
+        width: 100%;
     }
 }
 
@@ -273,8 +284,11 @@ section {
     .contact input[type="text"],input[type="email"], textarea{
         padding: 0 0 0 5px;
     }
-    .contact{
+    .contact, .banner{
         flex-direction:column;
+    }
+    .nav-li{
+        flex-direction: column;
     }
 }
 
