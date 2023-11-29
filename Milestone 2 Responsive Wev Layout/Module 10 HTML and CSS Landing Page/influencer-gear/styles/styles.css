@@ -1,0 +1,25 @@
+nav {
+    display:flex;
+    justify-content: space-between;
+    padding: 50px 200px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 50px;    
+}
+
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.banner-logo{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
