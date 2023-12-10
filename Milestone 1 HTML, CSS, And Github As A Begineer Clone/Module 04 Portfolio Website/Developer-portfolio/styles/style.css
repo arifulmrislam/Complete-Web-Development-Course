@@ -1,28 +1,73 @@
-body{
+body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
 
-.orange{
-    color:darkgoldenrod
+.orange {
+    color: darkgoldenrod
 }
-section{
-    display:flex;
+
+.flexible-container {
+    display: flex;
     /* margin: 30px; */
 }
-.half-width{
+
+.half-width {
     width: 50%;
     padding-left: 2%;
 }
-.half-width img{
+
+.half-width img {
     width: 80%;
 }
-.link-button{
+
+.link-button {
     text-decoration: none;
     color: white;
     background-image: linear-gradient(orange, tomato);
     font-weight: 700px;
     border-radius: 5px;
     padding: 10px 40px;
+}
+
+/* Dream big */
+.dream-big {
+    display: flex;
+    margin-top: 15%;
+}
+
+/* Experience */
+.banner-title {
+    color: darkgoldenrod
+}
+#expr{
+    padding-left: 2%;
+}
+/* how to prepare box shadow and margin and padding */
+.experience-item {
+    margin-right: 5%;
+    margin-left: 5%;
+    box-shadow: 10px 10px 40px gray;
+    padding-left: 20px;
+    width: 50%;
+}
+
+.item1 {
+    border-left: 7px solid;
+    border-image: linear-gradient(blue, cyan);
+    border-image-slice: 1;
+}
+
+.item2 {
+    border-left: 7px solid;
+    border-image: linear-gradient(salmon, tomato);
+    border-image-slice: 1;
+}
+
+/* Footer */
+footer p{
+    margin-top: 5%;
+    text-align: center;
+    font-weight: 2rem;
 }
