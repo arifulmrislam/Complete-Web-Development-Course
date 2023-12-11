@@ -1,0 +1,134 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+}
+
+/* Landing page style */
+.landing-section{
+    display: flex;
+}
+.half-width{
+    width: 50%;
+    padding-left: 10%;
+}
+.half-width img{
+    width: 100%;
+}
+.landing-intro{
+    padding-top: 20%;
+    font-weight: 800px;
+    font-size: 60px;
+    color: #575757;
+}
+.landing-description{
+    color: #828282;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+.link-button{
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(orange, tomato);
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+/* About me styles */
+.about-me-description{
+    display: flex;
+    background-image: url(../images/shapes/Frame\ 58.jpg);
+    background-size: cover;
+}
+.about-me-description img{
+    width: 50%;
+    padding-top: 70px;
+    padding-left: 100px;
+}
+.about-me{
+    color:#707070;
+}
+.half-width2 {
+    width: 50%;
+    padding-right: 20%;
+    padding-top: 8%;
+}
+.about-me-description{
+    color: #18191F;
+    font-size: 18px;
+}
+
+/* Recipes styles */
+.recipes-headline{
+    padding-top: 20px;
+    color: #676767;
+}
+.recipes-descriptions{
+    padding-left: 30%;
+    padding-right: 30%;
+    color: #252525;
+}
+.recipes-description{
+    text-align: center;
+}
+
+.container{
+    display:flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 30px;
+}
+.container img{
+    width: 100%;
+}
+.recipe-title1{
+    color: #18191F;
+    font-size: 28px;
+}
+.recipe-title2{
+    color: #18191F;
+    font-size: 18px;
+    padding-right: 10%;
+}
+.recipes-img1{
+    box-shadow: 10px 10px 20px gray;
+    padding: 20px;
+    border-radius: 20px;
+}
+.recipes-img2 {
+    box-shadow: 10px 10px 20px gray;
+    padding: 20px;
+    border-radius: 20px;
+}
+.recipes-img3 {
+    box-shadow: 10px 10px 20px gray;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* Component styles */
+.component{
+    display: flex;
+    justify-content: center;
+    gap: 25%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 20px gray;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 10px;
+    padding: 2%;
+}
+.component-head{
+    font-size: 2.5rem;
+    /* font-weight: 900px; */
+}
+
+/* Footer */
+.food-net{
+    background-color: #0B0D17;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
