@@ -5,6 +5,14 @@
 .nav {
     grid-area: nav;
 }
+.nav a{
+    text-decoration: none;
+}
+.nav ul {
+    list-style-type: none;
+    padding-left: 10px;
+    font-weight: 700;
+}
 .main {
     grid-area: main;
 }
@@ -22,6 +30,7 @@
     background-color: bisque;
     border-radius: 10px;
 }
+
 /* Default styles for larger screens */
 .grid-container {
     display: grid;
@@ -35,32 +44,36 @@
     ;
 }
 
+/* Media query for screens up to 576px */
+@media screen and (max-width: 576px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "aside"
+            "ad"
+            "footer";
+    }
+}
 /* Media query for screens between 577px and 992px */
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .grid-container {
         grid-template-columns: 1fr 3fr 1fr;
         grid-template-areas: 
-        "header"
-        "nav"
-        "aside main main"
-        "ad footer footer";
+        "header header header header"
+        "nav    nav     nav     nav"
+        "aside  main    main    main"
+        "ad     footer  footer  footer";
+    }
+    .nav ul{
+        display: flex;
+        justify-content: space-between;
     }
 }
 
-/* Media query for screens up to 576px */
-@media screen and (max-width: 576px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "header"
-        "nav"
-        "main"
-        "aside"
-        "ad"
-        "footer"
-        ;
-    }
-}
+
 
 
 
