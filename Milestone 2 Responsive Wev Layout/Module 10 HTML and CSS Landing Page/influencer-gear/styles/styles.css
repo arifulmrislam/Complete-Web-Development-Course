@@ -14,12 +14,35 @@ nav li {
     margin-left: 50px;    
 }
 
+nav i{
+    padding-left: 20px;
+}
+.banner h2, p, button{
+    margin-left: 200px;
+}
+.banner-left{
+    margin-top: 10%;
+}
 .banner{
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-
+.banner img{
+    width: 50%;
+    padding-left: 15%;
+    margin-bottom: 20%;
+}
+.banner button{
+    background-color: brown;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    color:aliceblue;
+}
 .banner-logo{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    margin-left: 15%;
+    margin-right: 10%;
 }
