@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of DOM</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <style>
+    .fruits-list li{
+        color: rgb(40, 7, 122);
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="header-title">Welcome to my DOM</h1>
+    </header>
+    <main id="main-contain">
+        <h1>My Awesome DOM de BABA</h1>
+        <ul>
+            <li class="places">Jalali Set</li>
+            <li class="places">Shafayat</li>
+            <li class="places">Bonobash</li>
+            <li id="4th">Dom de re baba</li>
+        </ul>
+        <section class="fruits-list">
+            <h1>Fruits name</h1>
+        <ul class="fruits">
+            <li>Mango</li>
+            <li>Banana</li>
+            <li>Orange</li>
+            <li>Pineapple</li>
+        </ul>
+        <ul id="places">
+            <li>Dhaka</li>
+            <li>Khulna</li>
+            <li>Chittagong</li>
+            <li>Ols-Dhaka</li>
+        </ul>
+        </section>
+
+    </main>
+    <script src="./js/append.js"></script>
+    <script src="./js/dom.js">
+    </script>
+    <script>
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection);
+        for(let li of liCollection){
+            // console.log(li.innerText);
+        }
+
+        const allHeading = document.getElementsByTagName('h1');
+        for(let h1 of allHeading){
+            // console.log(h1.innerText)
+        }
+
+        const someLi = document.querySelectorAll('.fruits-list li');
+        // console.log(someLi);
+        for(const li of someLi){
+            // console.log(li.innerText);
+        }
+    </script>
+    
+</html>
