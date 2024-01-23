@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Events</title>
+</head>
+<body>
+    <h1>More Events</h1>
+    <button id="btn-more">Events</button>
+    <input id="text-field"type="text">
+    <script>
+        //Focus method when we type on input tag
+        document.getElementById('text-field').addEventListener('focus',function(){
+            console.log('Event trigged inside the input field');
+        })
+        //Blur method, when we clicked on outside
+        document.getElementById('text-field').addEventListener('blur',function(){
+            console.log('Event trigged inside the input field blur');
+        })
+        //mousemove method
+        document.getElementById("btn-more").addEventListener('mousemove',function() {
+            console.log('Hello JS');
+        })
+        //keydown method
+        document.getElementById("text-field").addEventListener('keydown',function() {
+            console.log(event.target.value);
+        })
+        //keyup method
+        document.getElementById("text-field").addEventListener('keyup',function() {
+            console.log(event.target.value);
+        })
+    </script>
+</body>
+</html>

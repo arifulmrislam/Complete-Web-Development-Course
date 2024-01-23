@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Summary</title>
+    </head>
+    <body>
+        <h1>Explore DOM Events</h1>
+        <button onclick="makeGreen()">Make Green</button>
+        <button id="makeYellow">Make Yellow</button><br><br>
+
+        <input id='user-email' type="text">
+        <script>
+        //option 1    
+        function makeGreen(){
+            document.body.style.background = 'green';
+        }
+        //option 2
+document.getElementById('makeYellow').addEventListener('click',function(){
+            document.body.style.background = 'yellow';
+        })
+
+        //option 3: how to get some value from input tag
+
+        document.getElementById('user-email').addEventListener('keyup',function(event){
+            console.log(event.target.value);
+        })
+    </script>
+    </body>
+</html>
