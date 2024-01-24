@@ -24,25 +24,29 @@
             <li id="4th">Dom de re baba</li>
         </ul>
         <section class="fruits-list">
-            <h1>Fruits name</h1>
+            <h1>Fruits Name</h1>
         <ul class="fruits">
             <li>Mango</li>
             <li>Banana</li>
             <li>Orange</li>
             <li>Pineapple</li>
         </ul>
-        <ul id="places">
+        </section>
+        <section id="placesToVisit">
+            <h1>Places Name</h1>
+            <ul id="places">
             <li>Dhaka</li>
             <li>Khulna</li>
             <li>Chittagong</li>
-            <li>Ols-Dhaka</li>
-        </ul>
+            <li>OlD-Dhaka</li>
+        </ul>            
         </section>
 
     </main>
+    <!-- Connect HTML file with JS -->
     <script src="./js/append.js"></script>
-    <script src="./js/dom.js">
-    </script>
+    <script src="./js/dom.js"></script>
+    
     <script>
         const liCollection = document.getElementsByTagName('li');
         // console.log(liCollection);
@@ -50,11 +54,27 @@
             // console.log(li.innerText);
         }
 
+        //Option 1: getElementByTagName()
         const allHeading = document.getElementsByTagName('h1');
         for(let h1 of allHeading){
             // console.log(h1.innerText)
         }
 
+        //Option 2: getElementById()
+        //we don't need to use for loop to get the properties of id.
+        const place = document.getElementById('places');
+        console.log(place.innerText);
+
+        //Option 3: getElementByClassName()
+        const fruit = document.getElementsByClassName('fruits');
+        for(const fruits of fruit){
+            console.log(fruits.innerText);
+        }
+
+        //Option 4: 
+
+        //Option 5: querySelectorALl()
+        //Query selector: when we call class include (.) and when we call id include (#). 
         const someLi = document.querySelectorAll('.fruits-list li');
         // console.log(someLi);
         for(const li of someLi){

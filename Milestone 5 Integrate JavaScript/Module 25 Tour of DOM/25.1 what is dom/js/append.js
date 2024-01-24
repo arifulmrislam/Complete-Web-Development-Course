@@ -1,3 +1,5 @@
+//If we want to add something to out html 
+
 //Where to add
 const mainContain = document.getElementById('main-contain');
 
@@ -30,7 +32,7 @@ mainContain.appendChild(createNew)
 
 
 
-//set innserHTML directly
+//set insert HTML using template
 const sectionDress = document.createElement("section");
 sectionDress.innerHTML = `
 <h1>My Dress Section</h1>
@@ -41,3 +43,15 @@ sectionDress.innerHTML = `
 </ul>
 `
 mainContain.appendChild(sectionDress);
+
+// Practice:
+const shoeSection = document.createElement("section");
+shoeSection.innerHTML = `
+<h1>My Show Collection</h1>
+<ul>
+    <li>Nicky</li>
+    <li>Adidas</li>
+    <li>Lotto</li>
+</ul>
+`
+mainContain.appendChild(shoeSection);

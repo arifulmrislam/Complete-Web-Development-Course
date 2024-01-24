@@ -4,20 +4,27 @@ const sec = document.getElementsByClassName("places");
 for(let cl of sec){
     cl.style.color = 'red';
 }
-
+//Query selector: when we call class include (.) and when we call id include (#). 
+//But now we select "selector" thats why we don't need any (.) or (#)
+//for Node element, we can use forEach loop and for class we need to use for of loop.
 const sections = document.querySelectorAll('section');
-for(let sectionss of sections){
-    sectionss.style.backgroundColor = 'lightgray';
-    sectionss.style.border = '2px solid steelblue';
-    sectionss.style.padding = '5px';
-    sectionss.style.borderRadius = '15px';
-    sectionss.style.marginTop = "15px";
+for(let section of sections){
+    section.style.backgroundColor = 'lightgray';
+    section.style.border = '2px solid steelblue';
+    section.style.padding = '5px';
+    section.style.borderRadius = '15px';
+    section.style.marginTop = "15px";
 }
 
-
+const sectionPlace = document.getElementById("placesToVisit");
+    sectionPlace.style.color = 'red';
+    sectionPlace.style.fontSize = '1.5em'
+    sectionPlace.style.background = 'yellow';
 
 const placesContainer = document.getElementById('header-title');
 placesContainer.classList.add('yellow-bg');
+console.log(placesContainer.innerText);
+
 
 const f = document.getElementsByClassName('fruits');
 
