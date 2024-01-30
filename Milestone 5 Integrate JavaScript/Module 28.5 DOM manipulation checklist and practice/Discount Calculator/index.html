@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Functional Discount Calculator</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="text-5xl text-center mt-4">Functional <span
+                    class="text-red-500 font-medium">Discount
+                    Calculator</span>!!!</h1>
+        </header>
+        <main>
+            <!-- Balance and transaction section -->
+            <section class="mt-8 w-3/4 mx-auto">
+                <div class="grid grid-cols-2 gap-4 text-white mt-8">
+                    <div class="bg-yellow-400 p-8  rounded-lg">
+                        <h4 class="text-2xl">Please pay</h4>
+                        <h2 class="text-4xl font-medium">৳<span
+                                id="discount-price">00</span></h2>
+                    </div>
+                    <div class="bg-yellow-400 p-8  rounded-lg">
+                        <h4 class="text-2xl">Please pay</h4>
+                        <h2 class="text-4xl font-medium">৳<span
+                                id="coupon_disc">00</span></h2>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mt-8 w-3/4 mx-auto">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-violet-400 p-8 rounded-lg">
+                        <h3 class="text-4xl text-white mb-4">Original Price:</h3>
+                        <h2 class="text-4xl text-white font-medium mb-3">৳<span id="current-price">1000</span></h2>
+                        <h4 class="text-2xl text-white">Discount Button</h4>
+                        <button id="btn-pay"
+                            class="bg-blue-800 px-6 py-2 text-white rounded-lg font-medium hover:bg-blue-600 mt-4">Apply
+                            30%</button>
+                    </div>
+                    <!-- Second way to discount the price -->
+                    <div class="bg-amber-400 p-8 rounded-lg">
+                        <h3 class="text-4xl text-white mb-4">Original Price:</h3>
+                        <h2 class="text-4xl text-white font-medium mb-3">৳<span id="original-price">1000</span></h2>
+
+                        <input id="coupon-field"
+                            class="w-3/4 block px-4 py-3 rounded" type="text"
+                            placeholder="Please type DISC30">
+                        <h4 class="text-2xl text-white">Discount Button</h4>
+                        <button id="btn-discount"
+                            class="bg-blue-800 px-6 py-2 text-white rounded-lg font-medium hover:bg-blue-600 mt-4">Apply
+                            30%</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="js/dicount.js"></script>
+        <script src="js/coupon_discount.js"></script>
+    </body>
+</html>
