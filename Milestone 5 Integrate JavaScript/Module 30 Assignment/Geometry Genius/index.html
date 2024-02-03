@@ -21,58 +21,63 @@
             <section class="mt-6 w-3/4 mx-auto">
                 <div class="grid grid-cols-4 gap-4 mb-8">
 
-                                                <!--1. triangle section -->
+                    <!--1. triangle section -->
 
                     <div
                         class="bg-red-300 rounded-lg border-solid border-2 border-gray-400 flex flex-col items-center p-8">
                         <img class="size-25" src="images/triangle.png" alt>
                         <div class="text-center">
                             <h3 class="text-lg font-bold mt-4">Triangle</h3>
-                            <h4 class="text-gray-600">Area (A) = 0.5 bh</h4>
+                            <h4 class="text-gray-600">Area (A) = 0.5 x b x
+                                h</h4>
                         </div>
-                        <div class="flex items-center justify-between mt-3 gap-2">
-                            <input id="deposit-field-1"
+                        <div
+                            class="flex items-center justify-between mt-3 gap-2">
+                            <input id="input-field-1"
                                 class="px-5 py-2 rounded-sm w-20 bg-slate-200"
                                 type="text" placeholder="b">
                             <h4>cm</h4>
-                            <input id="deposit-field-2"
+                            <input id="input-field-2"
                                 class="px-5 py-2 rounded-sm w-20 bg-slate-200"
                                 type="text" placeholder="h">
                             <h4>cm</h4>
                         </div>
-                        <button
+                        <button id="btn-calculate"
                             class="bg-sky-500 text-white font-semibold rounded-lg px-16 py-1 w-full mt-4">Calculator</button>
                     </div>
-                                                <!--2. Rectangle section -->
+                    <!--2. Rectangle section -->
                     <div
                         class="bg-orange-300 rounded-lg border-solid border-2 border-gray-400 flex flex-col items-center p-8">
                         <img class="h-36" src="images/rectangle.png" alt>
                         <div class="text-center">
                             <h3 class="text-lg font-bold mt-4">Rectangle</h3>
-                            <h4 class="text-gray-600">Area (A) = w x  I</h4>
+                            <h4 class="text-gray-600">Area (A) = w x I</h4>
                         </div>
-                        <div class="flex items-center justify-between mt-3 gap-2">
-                            <input id="deposit-field-1"
+                        <div
+                            class="flex items-center justify-between mt-3 gap-2">
+                            <input id="rinput-field-1"
                                 class="px-5 py-2 rounded-sm w-20 bg-slate-200"
                                 type="text" placeholder="w">
                             <h4>cm</h4>
-                            <input id="deposit-field-2"
+                            <input id="rinput-field-2"
                                 class="px-5 py-2 rounded-sm w-20 bg-slate-200"
                                 type="text" placeholder="l">
                             <h4>cm</h4>
                         </div>
-                        <button
+                        <button id="btn-calculate2"
                             class="bg-sky-500 text-white font-semibold rounded-lg px-16 py-1 w-full mt-4">Calculator</button>
                     </div>
-                                            <!--3. Parallelogram section -->
+                    <!--3. Parallelogram section -->
                     <div
                         class="bg-amber-200 rounded-lg border-solid border-2 border-gray-400 flex flex-col items-center p-8">
                         <img class="h-36" src="images/parallelogram.png" alt>
                         <div class="text-center">
-                            <h3 class="text-lg font-bold mt-4">Parallelogram</h3>
+                            <h3
+                                class="text-lg font-bold mt-4">Parallelogram</h3>
                             <h4 class="text-gray-600">Area (A) = b x h</h4>
                         </div>
-                        <div class="flex items-center justify-between mt-3 gap-2">
+                        <div
+                            class="flex items-center justify-between mt-3 gap-2">
                             <input id="deposit-field-1"
                                 class="px-5 py-2 rounded-sm w-20 bg-slate-200"
                                 type="text" placeholder="b">
@@ -86,27 +91,45 @@
                             class="bg-sky-500 text-white font-semibold rounded-lg px-16 py-1 w-full mt-4">Calculator</button>
                     </div>
 
-
-                                                <!--4. Calculation section -->
+                    <!--4. Calculation section -->
                     <div
-                        class="rounded-lg border-solid border-2 border-gray-400 flex flex-col items-center p-8">
-                        <h3 class="underline font-semibold">Area Calculation</h3>
+                        class="rounded-lg border-solid border-2 border-gray-400 p-4">
+                        <div id="area-calculation">
+                            <h3 class="underline font-semibold text-center">Area
+                                Calculation</h3>
+                        </div>
+                        <div
+                            class="flex items-center justify-between mt-3">
+                            <h4>1.Triangle</h4>
+                            <input id="set-field-1"
+                                class="px-5 py-2 rounded-sm w-20 bg-slate-200 ml-3"
+                                type="text" placeholder="triangle">
+                            <h4>cm<sup>2</sup></h4>
+                        </div>
+                        <div
+                            class="flex items-center justify-between mt-3">
+                            <h4>2.Rectangle</h4>
+                            <input id="set-field-2"
+                                class="px-5 py-2 rounded-sm w-20 bg-slate-200"
+                                type="text" placeholder="rectangle">
+                            <h4>cm<sup>2</sup></h4>
+                        </div>
                     </div>
 
-
-
-                                                <!--5. Rhombus section -->
+                    <!--5. Rhombus section -->
                     <div
                         class="bg-lime-200 rounded-lg border-solid border-2 border-gray-400 flex flex-col items-center p-8">
                         <img class="h-36" src="images/rhombus.png" alt>
                         <div class="text-center">
                             <h3 class="text-lg font-bold mt-4">Rhombus</h3>
-                            <h4 class="text-gray-600">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></h4>
+                            <h4 class="text-gray-600">Area (A) = 0.5 x
+                                d<sub>1</sub> x d<sub>2</sub></h4>
                         </div>
-                        <div class="flex items-center justify-between mt-3 gap-2">
+                        <div
+                            class="flex items-center justify-between mt-3 gap-2">
                             <input id="deposit-field-1"
                                 class="px-5 py-2 rounded-sm w-20 bg-slate-200"
-                                type="text" placeholder="d1"su>
+                                type="text" placeholder="d1" su>
                             <h4>cm</h4>
                             <input id="deposit-field-2"
                                 class="px-5 py-2 rounded-sm w-20 bg-slate-200"
@@ -116,15 +139,17 @@
                         <button
                             class="bg-sky-500 text-white font-semibold rounded-lg px-16 py-1 w-full mt-4">Calculator</button>
                     </div>
-                                            <!--. Pentagon section -->
+                    <!--. Pentagon section -->
                     <div
                         class="bg-indigo-300 rounded-lg border-solid border-2 border-gray-400 flex flex-col items-center p-8">
                         <img class="h-36" src="images/pentagon.png" alt>
                         <div class="text-center">
                             <h3 class="text-lg font-bold mt-4">Pentagon</h3>
-                            <h4 class="text-gray-600">Area (A) = 0.5 x p x b</h4>
+                            <h4 class="text-gray-600">Area (A) = 0.5 x p x
+                                b</h4>
                         </div>
-                        <div class="flex items-center justify-between mt-3 gap-2">
+                        <div
+                            class="flex items-center justify-between mt-3 gap-2">
                             <input id="deposit-field-1"
                                 class="px-5 py-2 rounded-sm w-20 bg-slate-200"
                                 type="text" placeholder="p">
@@ -137,7 +162,7 @@
                         <button
                             class="bg-sky-500 text-white font-semibold rounded-lg px-16 py-1 w-full mt-4">Calculator</button>
                     </div>
-                                            <!--7. Ellipse section -->
+                    <!--7. Ellipse section -->
                     <div
                         class="bg-teal-200 rounded-lg border-solid border-2 border-gray-400 flex flex-col items-center p-8">
                         <img class="h-36" src="images/ellipse.png" alt>
@@ -145,7 +170,8 @@
                             <h3 class="text-lg font-bold mt-4">Ellipse</h3>
                             <h4 class="text-gray-600">Area (A) = πab</h4>
                         </div>
-                        <div class="flex items-center justify-between mt-3 gap-2">
+                        <div
+                            class="flex items-center justify-between mt-3 gap-2">
                             <input id="deposit-field-1"
                                 class="px-5 py-2 rounded-sm w-20 bg-slate-200"
                                 type="text" placeholder="a">
@@ -161,6 +187,7 @@
                 </div>
             </section>
         </main>
+        <script src="js/utilities.js"></script>
         <script src="js/forward.js"></script>
     </body>
 </html>
