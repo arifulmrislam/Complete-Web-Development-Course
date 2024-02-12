@@ -36,7 +36,8 @@ const displayPhones = (phones, isShowAll) => {
         phones = phones.slice(0, 9);
     }
 
-//Loop kore data dynamically ana inject kora
+//forEach Loop kore data dynamically nie asa ana inject kora.
+//forEach er karon hocche, array te onc gulo data asche, amra sudu output gulo UI te dekhabo.
     phones.forEach(phone => {
         // console.log(phone)
         //2. create a div
@@ -48,6 +49,7 @@ const displayPhones = (phones, isShowAll) => {
         alt="Shoes" /></figure>
         <div class="card-body">
             <h2 class="card-title">${phone.phone_name}</h2>
+            <h3 class="card-title">${phone.brand}</h3>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-center">
                 <button onclick="handleShowDetails('${phone.slug}')" class="btn btn-primary">Show Details</button>
@@ -61,7 +63,7 @@ const displayPhones = (phones, isShowAll) => {
 }
 //
 const handleShowDetails = async(id) => {
-    console.log('Show details', id);
+    // console.log('Show details', id);
     //load single data
     const res = await fetch(
     `https://openapi.programming-hero.com/api/phone/${id}`
@@ -75,17 +77,20 @@ const handleShowDetails = async(id) => {
 //showPhone Details
 const showPhoneDetails = (phone) =>{
     console.log(phone);
-    const phoneName = document.getElementById("show-details-phone-name");
-    phoneName.innerText = phone.name
+    // const phoneName = document.getElementById("show-details-phone-name");
+    // phoneName.innerText = phone.name
 
-    const showDetailContainer = document.getElementById("show-detail-container"
-    );
+    const showDetailContainer = document.getElementById("show-detail-container");
     showDetailContainer.innerHTML = `
         <img src="${phone.image}" alt=""/>
-        <p><span>Stroage:</span>${phone.mainFeatures.storage}</p>    
-        <p><span>GPS:</span>${phone?.others?.GPS || 'No GPS available'}</p>
-        <p><span>GPS:</span>${phone?.others?.GPS ? phone.others.GPS : 'No GPS available'}</p>
-    `
+        <h3 class="text-lg text-gray-950">${phone.name}</h3>
+        <p><span>Storage:</span>${phone.mainFeatures.storage}</p>    
+        <p><span>GPS:</span>${phone?.others?.GPS || "No GPS available"}</p>
+        <p><span>GPS:</span>${
+        phone?.others?.GPS ? phone.others.GPS : "No GPS available"
+        }</p>
+        <p><span>Slug:</span>${phone?.slug}</p>
+    `;
     //show the modal
     show_details_model.showModal();
 }
