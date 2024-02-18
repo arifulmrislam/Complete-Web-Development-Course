@@ -10,6 +10,7 @@ const loadPhone = async (searchText, isShowAll) => {
     `https://openapi.programming-hero.com/api/phones?search=${searchText}`
     );
     const data = await res.json();
+    //we can access object {.data} way.
     const phones = data.data;
     // console.log(phones);
     displayPhones(phones, isShowAll);
@@ -21,6 +22,7 @@ const displayPhones = (phones, isShowAll) => {
     //1. where we want to set our values
     const phoneContainer = document.getElementById("phone-container");
     //clear phone container cards before adding new cards
+    //we can also add .innderHtml to clear the phone container
     phoneContainer.textContent = '';
 
     //display show all button if there are more than 9 photos
@@ -59,6 +61,8 @@ const displayPhones = (phones, isShowAll) => {
         //4. append child
         phoneContainer.appendChild(phoneCard);
     });
+    //hiding toggleSpinner
+    //সব ডাটা দেখানর পর আমরা স্পিনার টা সরাইতে পারবো। 
     toggleLoadingSpinner(false);
 }
 //
@@ -78,7 +82,7 @@ const handleShowDetails = async(id) => {
 const showPhoneDetails = (phone) =>{
     console.log(phone);
     // const phoneName = document.getElementById("show-details-phone-name");
-    // phoneName.innerText = phone.name
+    // phoneName.innerText = phone.name 
 
     const showDetailContainer = document.getElementById("show-detail-container");
     showDetailContainer.innerHTML = `
