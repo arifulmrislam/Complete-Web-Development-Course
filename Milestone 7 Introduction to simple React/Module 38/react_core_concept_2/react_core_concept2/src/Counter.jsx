@@ -15,11 +15,12 @@ export default function Counter(){
     return ( 
         <div style={{border:'2px solid pink', 
                     borderRadius: '20px',
-                    padding: '20px',
-                    marginBottom: '15px'}}>
+                    padding: '15px',
+                    marginBottom: '10px'}}>
             <h3>Counter: {count}</h3>
-            <button onClick = {handleAdd}>Add</button>
-            <button onClick = {handleReduce}>Minus</button>
+            <button onClick = {handleAdd}>+1</button>
+            <button onClick = {handleReduce}>-1</button>
+            <p>The final counter app</p>
         </div>
     )
 }
