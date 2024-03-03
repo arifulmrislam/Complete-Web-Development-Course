@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Apple Watch Ultra",
+        "price": 799.0
+    },
+    {
+        "id": 2,
+        "name": "Samsung Galaxy Watch 5 Pro",
+        "price": 449.0
+    },
+    {
+        "id": 3,
+        "name": "Fitbit Sense 2",
+        "price": 299.0
+    },
+    {
+        "id": 4,
+        "name": "Garmin Forerunner 255",
+        "price": 399.0
+    },
+    {
+        "id": 5,
+        "name": "Amazfit Bip 3 Pro",
+        "price": 69.99
+    }
+]
