@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 
 const Blogs = () => {
-    //we need state for loading data
+    //we need state to keep data on variable
     //array te data thakai amader empty array banate hove
     const[blogs, setBlogs] = useState([]);
 
