@@ -5,7 +5,7 @@
         "title": "The Power of Positive Thinking",
         "author": "Norman Vincent Peale",
         "author_Img": "https://i.ibb.co/YhgB3bJ/michael-dam-m-EZ3-Po-FGs-k-unsplash.jpg",
-        "posted_date": "2024-03-04",
+        "posted_date": "June 5, 2024",
         "reading_time": 9,
         "hashtags": [
             "self-help",
@@ -19,7 +19,7 @@
         "title": "Atomic Habits",
         "author": "James Clear",
         "author_Img": "https://i.ibb.co/W2BSzV5/sigmund-a19-OVaa2rz-A-unsplash.jpg",
-        "posted_date": "2024-03-03",
+        "posted_date": "July 6, 2024",
         "reading_time": 8,
         "hashtags": [
             "productivity",
@@ -33,7 +33,7 @@
         "title": "Sapiens: A Brief History of Humankind",
         "author": "Yuval Noah Harari",
         "author_Img": "https://i.ibb.co/Y7ftgtN/vicky-hladynets-uya-TT9u6-Av-I-unsplash.jpg",
-        "posted_date": "2024-03-02",
+        "posted_date": "August 10, 2024",
         "reading_time": 4,
         "hashtags": [
             "history",
@@ -47,26 +47,12 @@
         "title": "The Lord of the Rings",
         "author": "J. R. R. Tolkien",
         "author_Img": "https://i.ibb.co/17L94gN/jd-mason-2o-Ui-Uu5-QAys-unsplash.jpg",
-        "posted_date": "2024-03-01",
+        "posted_date": "April 8, 2021",
         "reading_time": 6,
         "hashtags": [
             "fantasy",
             "literature",
             "adventure"
-        ]
-    },
-    {
-        "id": 5,
-        "cover": "https://picsum.photos/id/104/300/200",
-        "title": "Dune",
-        "author": "Frank Herbert",
-        "author_Img": "https://picsum.photos/id/204/300",
-        "posted_date": "2024-02-29",
-        "reading_time": 5,
-        "hashtags": [
-            "science fiction",
-            "adventure",
-            "dystopia"
         ]
     }
 ]
