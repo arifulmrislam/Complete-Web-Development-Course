@@ -1,4 +1,6 @@
+import { useEffect, useState } from 'react';
 import './App.css'
+import tutorialsData from './tutorial.json'
 
 function App() {
 
@@ -40,12 +42,34 @@ function Main() {
 }
 
 function Left() {
+  const [data,setData] = useState([])
+  useEffect(() =>{
+    setData(tutorialsData)
+  },[])
   return (
     <div className='left'>
       <JsConfig></JsConfig>
+      <div id="tutorials-container">
+        {
+          data.map(d => <Tutorial title = {d.title}
+          desc = {d.desc}></Tutorial>)
+        }
+      </div>
     </div>
   )
 }
+
+function Tutorial(props){
+  const {title, desc} = props
+  return (
+    <div className="tutorial">
+      <h2>{title}</h2>
+      <p>{desc}</p>
+      <button className="btn-details">View details</button>
+    </div>
+  );
+}
+
 function Right() {
   return (
     <div className='right'>
