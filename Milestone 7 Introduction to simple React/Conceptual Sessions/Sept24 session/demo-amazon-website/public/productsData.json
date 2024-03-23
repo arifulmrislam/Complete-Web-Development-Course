@@ -1,0 +1,122 @@
+[
+    {
+        "key": "e862bec4-7865-44f5-85b3-67a7c23f0c1a",
+        "category": "Electronics",
+        "name": "Samsung Galaxy S20",
+        "seller": "Samsung",
+        "wholePrice": "$999.99",
+        "stock": 10,
+        "star": 4.5,
+        "starCount": 500,
+        "img": "https://example.com/samsung-galaxy-s20.jpg",
+        "URL": "https://www.amazon.com/samsung-galaxy-s20",
+        "features": [
+            {
+                "description": "Screen Size",
+                "value": "6.2 inches"
+            },
+            {
+                "description": "Camera",
+                "value": "Quad 64MP"
+            }
+        ],
+        "price": "$899.99",
+        "shipping": "$9.99"
+    },
+    {
+        "key": "b1a62ae9-0f11-4f5e-82ab-df7c4351fd64",
+        "category": "Home & Kitchen",
+        "name": "Instant Pot Duo 7-in-1",
+        "seller": "Instant Pot",
+        "wholePrice": "$119.95",
+        "stock": 15,
+        "star": 4.8,
+        "starCount": 2000,
+        "img": "https://example.com/instant-pot-duo.jpg",
+        "URL": "https://www.amazon.com/instant-pot-duo",
+        "features": [
+            {
+                "description": "Capacity",
+                "value": "6 Quarts"
+            },
+            {
+                "description": "Functions",
+                "value": "7-in-1"
+            }
+        ],
+        "price": "$99.95",
+        "shipping": "$6.95"
+    },
+    {
+        "key": "d8cb3451-dabf-4b24-b42b-4c4cf4d9d1f5",
+        "category": "Books",
+        "name": "The Great Gatsby",
+        "seller": "F. Scott Fitzgerald",
+        "wholePrice": "$12.99",
+        "stock": 20,
+        "star": 4.7,
+        "starCount": 1500,
+        "img": "https://example.com/the-great-gatsby.jpg",
+        "URL": "https://www.amazon.com/the-great-gatsby",
+        "features": [
+            {
+                "description": "Author",
+                "value": "F. Scott Fitzgerald"
+            },
+            {
+                "description": "Pages",
+                "value": "180"
+            }
+        ],
+        "price": "$9.99",
+        "shipping": "$3.00"
+    },
+    {
+        "key": "7af10f6a-79e2-41f9-ba3c-9e2f9a543bf5",
+        "category": "Clothing",
+        "name": "Levi's Men's 501 Original Fit Jeans",
+        "seller": "Levi's",
+        "wholePrice": "$59.50",
+        "stock": 30,
+        "star": 4.6,
+        "starCount": 1000,
+        "img": "https://example.com/levis-501-jeans.jpg",
+        "URL": "https://www.amazon.com/levis-501-jeans",
+        "features": [
+            {
+                "description": "Material",
+                "value": "100% Cotton"
+            },
+            {
+                "description": "Fit",
+                "value": "Original"
+            }
+        ],
+        "price": "$49.99",
+        "shipping": "$4.50"
+    },
+    {
+        "key": "24ed726d-4a85-43c8-b2a6-2a4653ef64ff",
+        "category": "Toys & Games",
+        "name": "LEGO Star Wars Millennium Falcon",
+        "seller": "LEGO",
+        "wholePrice": "$159.99",
+        "stock": 5,
+        "star": 4.9,
+        "starCount": 500,
+        "img": "https://example.com/lego-millennium-falcon.jpg",
+        "URL": "https://www.amazon.com/lego-millennium-falcon",
+        "features": [
+            {
+                "description": "Pieces",
+                "value": "1351"
+            },
+            {
+                "description": "Ages",
+                "value": "9-14"
+            }
+        ],
+        "price": "$139.99",
+        "shipping": "$8.00"
+    }
+]
