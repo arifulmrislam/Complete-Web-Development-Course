@@ -201,3 +201,58 @@ footer{
     border: none;
     width: 100%;
 }
+
+/* responsive styles  */
+/* mobile devices */
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 576px){
+    .header{
+        background-image: none;
+    }
+    nav,
+    nav > ul,
+    .banner,
+    .skills-container, .resume-container, footer{
+        flex-direction: column;
+    }
+
+    .banner .profile-pic{
+        width: 100%;
+    }
+    .section-description{
+        text-align: justify;
+        text-align-last: left;
+    }
+
+    .section-title{
+        text-decoration: underline solid red 10%;
+        text-transform: uppercase;
+    }
+    .banner, 
+    #what-i-do-description{
+        padding: 20px;
+    }
+    .btn-primary{
+        margin-bottom: 15px;
+    }
+    footer{
+        padding: 10px;
+        /* align-items: center; */
+    }
+    .social-links{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    .contact input[type="text"],.contact input[type="email"], textarea{
+    width: 80%;
+    }
+    .about-info-container{
+        flex-direction: column;
+    }
+}
