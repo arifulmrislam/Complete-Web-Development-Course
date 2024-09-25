@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid Property</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap"
+            rel="stylesheet">
+        <!-- Font-awesome cdn -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <h3 class="text-3xl">Hello Grid</h3>
+        <div class="grid grid-cols-2 gap-2.5">
+            <div class="bg-blue-400 p-4 rounded-lg">Box 1</div>
+            <div class="bg-blue-400 p-4 rounded-lg">Box 2</div>
+            <div class="bg-blue-400 p-4 rounded-lg">Box 3</div>
+            <div class="md:col-span-2 bg-blue-400 p-4 rounded-lg">Box 4</div>
+            <div class="bg-blue-400 p-4 rounded-lg">Box 5</div>
+            <div class="bg-blue-400 p-4 rounded-lg">Box 5</div>
+        </div>
+    </body>
+</html>

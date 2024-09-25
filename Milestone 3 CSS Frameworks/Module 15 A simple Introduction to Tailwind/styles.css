@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    font-weight: 400;
+}
+html{
+    background-color: #ffff;
+    scroll-behavior: smooth;
+    font-family: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #ffff;
+    width: 100rem;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+}
