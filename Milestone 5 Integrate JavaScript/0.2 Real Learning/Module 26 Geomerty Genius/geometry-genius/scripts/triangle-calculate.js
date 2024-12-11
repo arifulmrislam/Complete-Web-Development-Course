@@ -1,12 +1,3 @@
-
-
-// function calculationTriangleArea() {
-//     const TriangleBaseInput = document.getElementById('triangle-base');
-//     const TriangleBaseInputText = TriangleBaseInput.value;
-//     const base = parseFloat(TriangleBaseInput);
-//     console.log(typeof base);
-// }
-
 function calculateTriangleArea() {
     const TriangleBaseInput = document.getElementById('triangle-base');
     const TriangleHeightInput = document.getElementById('triangle-height');
