@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Events</title>
+</head>
+<body>
+    <h1 id="secret-info">My Secret Info</h1>
+    <h1>Explore More Events</h1>
+    <button id="btn-more">Events</button>
+    <button id="btn-delete" disabled>Delete</button>
+    <input id="text-fields" type="text" placeholder="Please type delete">
+
+    <script>
+        // document.getElementById('text-button').addEventListener('focus', function(){
+        //     console.log('Hello world')
+        // })
+        // document.getElementById('text-button').addEventListener('blur', function(){
+        //     console.log('Hello Blur')
+        // })
+
+        document.getElementById('text-fields').addEventListener('keyup',function(event){
+            const text = event.target.value;
+            console.log(text);
+            const deleteBtn = document.getElementById('btn-delete')
+            if(text === 'Delete'){
+                deleteBtn.removeAttribute('disabled');
+            } else {
+                deleteBtn.setAttribute('disabled', true);
+            }
+        })
+
+        document.getElementById('btn-delete').addEventListener('click',function(){
+            const secret = document.getElementById('secret-info');
+            secret.style.display = 'none';
+        })
+
+
+
+        // document.getElementById('text-fields').addEventListener('keyup', function(event){
+        //     console.log(event.target.value);
+        // })
+        // document.getElementById('btn-more').addEventListener('click', function(){
+        //     console.log('More Events!!!')
+        // })
+    </script>
+</body>
+</html>

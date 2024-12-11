@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Summary</title>
+</head>
+<body>
+    <h1>Final DOM Event Handlers</h1>
+    <h3 id="handler-status">Default Text</h3>
+    <h3 id="input-text-display">Default Text Input</h3>
+    <h2 id="input-text">Default Input Text</h2>
+    <input id="input-field" type="text">
+    <button id="btn-update">Update</button>
+    <br>
+    <br>
+    
+    <button onClick="handleOnClick()">Handle Event by Add onclick</button>
+    <button id="eventListener">Handle Event </button>
+    <button id='make-blue'></button>
+
+
+    <script src="./js/events.js"></script>
+    <script>
+        function handleOnClick(){
+            const handlerStatus = document.getElementById('handler-status');
+            document.getElementById('handler-status').innerText = 'Hello';
+        }
+    </script>
+    <script>
+        document.getElementById('eventListener').addEventListener('click', function(){
+            document.getElementById('input-text-display').style.color = 'red';
+        })
+
+        document.getElementById('btn-update').addEventListener('click', function(){
+            const inputFiled = document.getElementById('input-field');
+            const inputText = inputFiled.value;
+            document.getElementById('input-text').innerText = inputText;
+            inputFiled.value = '';
+        })
+    </script>
+</body>
+</html>
