@@ -1,13 +1,13 @@
 // function play(){
-//     // step-1: hide the home screen. to hide the screen add the class hidden to the home section
+//     step-1: hide the home screen. to hide the screen add the class hidden to the home section
 //     const homeSection = document.getElementById('home-screen');
 //     homeSection.classList.add('hidden');
-//     // console.log(homeSection.classList)
+//     console.log(homeSection.classList)
 
-//     // show the playground
+//     show the playground
 //     const playgroundSection = document.getElementById('play-ground');
 //     playgroundSection.classList.remove('hidden');
-//     // console.log(playgroundSection.classList)
+//     console.log(playgroundSection.classList)
 // }
 
 function handleKeyboardKeyUpEvent(event) {
@@ -40,10 +40,10 @@ function handleKeyboardKeyUpEvent(event) {
         // const currentScore = parseInt(currentScoreText);
         // console.log(currentScore);
         
-        // // 2 .increase the score by 1
+        // 2 .increase the score by 1
         const newScore = currentScore + 1;
 
-        // // 3. show the updated score
+        // 3. show the updated score
         // currentScoreElement.innerText = newScore;
 
         // start a new round
@@ -67,10 +67,10 @@ function handleKeyboardKeyUpEvent(event) {
         // const currentLifeText = currentLifeElement.innerText;
         // const currentLife = parseInt(currentLifeText);
 
-        // // step -2: reduce the life count
+        // step -2: reduce the life count
         // const newLife = currentLife - 1;
 
-        // // step-3: display the updated life count
+        // step-3: display the updated life count
         // currentLifeElement.innerText = newLife;
     }
 }
