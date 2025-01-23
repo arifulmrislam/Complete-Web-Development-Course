@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Wireless Bluetooth Headphones",
+    "price": 29.99,
+    "description": "High-quality wireless headphones with noise-cancellation and long battery life.",
+    "category": "Electronics",
+    "image": "https://m.media-amazon.com/images/I/61CGHv6kmWL._AC_SL1500_.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Wooden Dining Table",
+    "price": 149.5,
+    "description": "Stylish and durable dining table made of solid wood, perfect for family meals.",
+    "category": "Furniture",
+    "image": "https://m.media-amazon.com/images/I/61VUlJ8pGuL._AC_SL1000_.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Men's Running Shoes",
+    "price": 59.99,
+    "description": "Lightweight and comfortable running shoes for daily workouts and jogging.",
+    "category": "Footwear",
+    "image": "https://m.media-amazon.com/images/I/61OUmq3QsXL._AC_SL1301_.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Portable Coffee Maker",
+    "price": 24.99,
+    "description": "Compact and easy-to-use coffee maker for brewing your favorite coffee on the go.",
+    "category": "Kitchen",
+    "image": "https://m.media-amazon.com/images/I/61CGHv6kmWL._AC_SL1500_.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Smartphone Stand",
+    "price": 12.75,
+    "description": "Adjustable stand for smartphones and tablets, perfect for hands-free use.",
+    "category": "Accessories",
+    "image": "https://m.media-amazon.com/images/I/61CGHv6kmWL._AC_SL1500_.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Smartphone Stand",
+    "price": 12.75,
+    "description": "Adjustable stand for smartphones and tablets, perfect for hands-free use.",
+    "category": "Accessories",
+    "image": "https://m.media-amazon.com/images/I/61CGHv6kmWL._AC_SL1500_.jpg"
+  }
+]
