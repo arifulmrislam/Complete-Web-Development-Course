@@ -1,0 +1,13 @@
+.country{
+    border: 2px solid skyblue;
+    margin: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.country img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
