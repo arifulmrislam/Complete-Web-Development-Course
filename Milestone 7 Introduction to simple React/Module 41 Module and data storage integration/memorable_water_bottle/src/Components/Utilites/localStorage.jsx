@@ -6,12 +6,12 @@ const getStoreCart = () => {
     return [];
 }
 
-const saveCartToLS = cart => {
+const saveCartToLS = (cart) => {
     const cartStringified = JSON.stringify(cart);
     localStorage.setItem('cart', cartStringified);
 }
 
-const addToLs = id => {
+const addToLs = (id) => {
     const cart = getStoreCart();
     cart.push(id);
     //save to local storage

@@ -15,7 +15,7 @@ const Cart = ({cart, handleRemoveFromCart}) => {
 };
 
 Cart.propTypes = {
-    cart: PropTypes.array,
+    cart: PropTypes.array.isRequired,    
     handleRemoveFromCart: PropTypes.func.isRequired
 }
 

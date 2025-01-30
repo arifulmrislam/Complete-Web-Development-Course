@@ -1,6 +1,6 @@
 import './Sunglass.css'
 import Watch from '../../Watch/Watch';
-import { add, multiply, dividedTheFirstNumberByTheSecondNumbers as divided } from '../../Calculator/Calculator';
+import { add, multiply, dividedTheFirstNumberByTheSecondNumbers as divided } from '../Calculator/Calculator';
 
 const Sunglass = () => {
     const first = 50;
