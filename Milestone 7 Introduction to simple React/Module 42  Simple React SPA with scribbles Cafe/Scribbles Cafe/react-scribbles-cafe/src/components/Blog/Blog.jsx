@@ -40,7 +40,6 @@ const Blog = ({blog, handleAddToBookmark, handleMarkAsRead }) => {
 };
 
 Blog.propTypes = {
-    id: PropTypes.number,
     blog: PropTypes.object.isRequired,
     handleAddToBookmark: PropTypes.func.isRequired,
     handleMarkAsRead: PropTypes.func.isRequired,
