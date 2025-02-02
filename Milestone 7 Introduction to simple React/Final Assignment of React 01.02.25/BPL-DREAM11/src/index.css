@@ -1,6 +1,22 @@
 @import "tailwindcss";
 
 
+.toast-error {
+    display: flex;
+    align-items: center;
+    background-color: #ff4d4d !important;
+    /* Red error background */
+    color: white !important;
+    font-weight: bold;
+    padding: 12px 16px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.toast-error i {
+    margin-right: 10px;
+    font-size: 18px;
+}
 
 
 /* 
