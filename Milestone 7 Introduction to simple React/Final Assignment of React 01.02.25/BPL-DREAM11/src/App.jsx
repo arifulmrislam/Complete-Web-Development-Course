@@ -7,10 +7,12 @@ import Players from './components/Players/Players';
 import { ToastContainer, toast } from 'react-toastify';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import SelectedPlayers from './components/SelectedPlayers/SelectedPlayers';
+import NewsLetter from './components/NewsLetter/NewsLetter';
 
 function App() {
     const [coins, setCoins] = useState(0);
-    const [selectedPlayer, setSelectedPlayers] = useState(0);
+    const [selectedPlayers, setSelectedPlayers] = useState([]);
+    const [view, setView] = useState('available');
 
     const handleAddToCoin = (coin) => {
         // console.log('I got the coin');
@@ -41,11 +43,18 @@ function App() {
 
         // Deduct cost and add the player to the selected list
         setCoins((prevCoins) => prevCoins - biddingPrice);
-        setSelectedPlayers((prevPlayers) => prevPlayers + 1);
+        setSelectedPlayers((prevPlayers) => [...prevPlayers, player]);
     };
 
-    const selectedPlayers = () => {
-        console.log('Trigger selected button');
+    const handlePlayerRemove = (player) => {
+        setCoins((prevCoins) => prevCoins + player.biddingPrice);
+        setSelectedPlayers((prevPlayers) => 
+            prevPlayers.filter((p) => p.name !== player.name)
+        );
+    };
+
+    const toggleView = (viewName) => {
+        setView(viewName);
     }
 
 
@@ -54,12 +63,22 @@ function App() {
             <Navbar coins={coins}></Navbar>
             <Banner handleAddToCoin={handleAddToCoin}></Banner>
             <MainSection 
-            selectedPlayer={selectedPlayer}
-            selectedPlayers={selectedPlayers}
+                selectedPlayer={selectedPlayers.length}
+                selectedPlayers={() => toggleView('selected')}
+                availablePlayers={() => toggleView('available')}
             ></MainSection>
-            <SelectedPlayers></SelectedPlayers>
-            <Players handlePlayerAddToSelect={handlePlayerAddToSelect}></Players>
+            {view === 'available' && (
+                <Players handlePlayerAddToSelect={handlePlayerAddToSelect}></Players>
+            )}
+            {view === 'selected' && ( 
+                <SelectedPlayers
+                    selectedPlayers={selectedPlayers}
+                    handlePlayerRemove={handlePlayerRemove}
+                >
+                </SelectedPlayers>
+        )}
             <ToastContainer />
+            <NewsLetter></NewsLetter>
         </>
     )
 }
