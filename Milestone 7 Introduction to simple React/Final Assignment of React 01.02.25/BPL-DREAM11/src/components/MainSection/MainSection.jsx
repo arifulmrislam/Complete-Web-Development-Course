@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const MainSection = ({selectedPlayer}) => {
+const MainSection = ({selectedPlayer, selectedPlayers}) => {
     return (
         <div className='flex justify-between items-center max-w-7xl mx-auto p-4 mt-6'>
             <div className='text-2xl text-black font-bold cursor-pointer'>
@@ -13,7 +13,7 @@ const MainSection = ({selectedPlayer}) => {
                     Available
                 </button>
 
-                <button
+                <button onClick={(selectedPlayers)}
                     className="px-6 py-2 text-gray-500 bg-white cursor-pointer"
                 >
                     Selected ({selectedPlayer})
@@ -26,6 +26,7 @@ const MainSection = ({selectedPlayer}) => {
 
 MainSection.propTypes = {
     selectedPlayer: PropTypes.string.isRequired,
+    selectedPlayers: PropTypes.string.isRequired,
 };
 
 export default MainSection;

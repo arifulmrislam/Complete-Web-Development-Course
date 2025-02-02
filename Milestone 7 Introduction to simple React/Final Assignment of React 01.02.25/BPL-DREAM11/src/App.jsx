@@ -6,6 +6,7 @@ import MainSection from './components/MainSection/MainSection';
 import Players from './components/Players/Players';
 import { ToastContainer, toast } from 'react-toastify';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import SelectedPlayers from './components/SelectedPlayers/SelectedPlayers';
 
 function App() {
     const [coins, setCoins] = useState(0);
@@ -43,12 +44,20 @@ function App() {
         setSelectedPlayers((prevPlayers) => prevPlayers + 1);
     };
 
+    const selectedPlayers = () => {
+        console.log('Trigger selected button');
+    }
+
 
     return (
         <>
             <Navbar coins={coins}></Navbar>
             <Banner handleAddToCoin={handleAddToCoin}></Banner>
-            <MainSection selectedPlayer={selectedPlayer}></MainSection>
+            <MainSection 
+            selectedPlayer={selectedPlayer}
+            selectedPlayers={selectedPlayers}
+            ></MainSection>
+            <SelectedPlayers></SelectedPlayers>
             <Players handlePlayerAddToSelect={handlePlayerAddToSelect}></Players>
             <ToastContainer />
         </>
