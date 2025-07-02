@@ -1,4 +1,6 @@
 // const addToLocalStorage = () => {
+// import { useState } from 'react';
+// import { useEffect } from 'react';
 //     const idInput = document.getElementById('storage-id');
 //     const id = idInput.value;
 //     const valueInput = document.getElementById('storage-value');
@@ -83,3 +85,66 @@
 // 
 // console.log(person.hobbies);
 
+// const myString = 'This is a string';
+// console.log(myString.indexOf('a'));
+
+
+
+// const arr = [10, 20, 30, 40];
+
+// let [,,balance] = arr;
+
+// console.log(balance);
+
+// let a = -10;
+// 
+// console.log(Math.abs(a));
+
+
+// const person = {
+//     name: "John Doe",
+//     age: 30,
+// }
+// 
+// const json = JSON.stringify(person, (key, value) =>{
+//     if(key === "age"){
+//         return value + 1;
+//     } else{
+//         return value;
+//     }
+// })
+// console.log(json);
+
+
+// set user  preference
+// localStorage.setItem('them', 'light');
+// const theme = localStorage.getItem('theme');
+
+
+// const App = () => {
+//     const [position, setPosition] =useState(null);
+// 
+//     useEffect(() => {
+//         navigator.geolocation.getCurrentPosition((position) => {
+//             setPosition(position);
+//         });
+//     },[]);
+// }
+// 
+// return (
+//     <div>
+//         {position && (
+//             <div>
+//                 <p>Latitude: {position.coords.latitude}</p>
+//                 <p>Longitude: {position.coords.longitude}</p>
+//             </div>
+//         )}
+//     </div>
+// );
+// 
+// export default App;
+
+const numbers = [1, 2, 3, 4, 5];
+
+const number = numbers.find((number) => number%2===0);
+console.log(number);
