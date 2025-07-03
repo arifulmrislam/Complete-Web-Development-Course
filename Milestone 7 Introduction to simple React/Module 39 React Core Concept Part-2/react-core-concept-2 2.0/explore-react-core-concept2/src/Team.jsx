@@ -1,27 +1,36 @@
+
 import { useState } from 'react';
 
-export default function Team(){
-    const [team, setTeam] = useState(11);
+const Team = () => {
+    const [count, setCount] = useState(11);
 
-    const handleAdd = () =>{
-        const newTeam = team + 1;
-        setTeam(newTeam);
+    const handleAdd = () => {
+        const newTeam = count + 1;
+        setCount(newTeam);
     }
 
     const handleRemove = () => {
-        setTeam(team -1);
+        // let newTeam;
+        if(count > 0){
+            setCount(count -1);
+        } else{
+            setCount(count);
+        }
     }
+
     const teamStyle = {
         border: '2px solid purple',
         margin: '15px',
         padding: '15px',
         borderRadius: '15px',
     }
-    return ( 
+    return (
         <div style={teamStyle}>
-            <h3>Player: {team}</h3>
-            <button onClick={handleAdd}>Add</button>
-            <button onClick={handleRemove}>Remove</button>
+            <h3>Players: {count}</h3>
+            <button className='text-red-700' onClick={handleAdd}>Add</button>
+            <button className='text-blue-700'onClick={handleRemove}>Subtraction</button>
         </div>
-    )
-}
+    );
+};
+
+export default Team;

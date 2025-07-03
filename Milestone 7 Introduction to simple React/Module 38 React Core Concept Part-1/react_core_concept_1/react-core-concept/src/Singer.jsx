@@ -1,4 +1,5 @@
 export default function Singers({singer}){
+    console.log(singer)
     return( 
 
         <div>

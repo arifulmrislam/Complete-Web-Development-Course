@@ -1,34 +1,39 @@
-import {useState} from 'react';
 import './App.css'
-import Counter from './Counter'
-import Events from './Events';
-import Team from './Team'
-import Users from './Users';
+import Counter from './Counter';
 import Friends from './Friends';
+import Team from './Team';
+import Users from './Users';
 
 function App() {
-    const [count, setCount] = useState(0);
-    const handleReduce = () => {
-        const newCount = count -1;
-        setCount(newCount);
+
+    function handleClick1 (){
+        alert('button 1 clicked');
     }
 
-    function handleClick() {
-        alert('You Clicked Me!');
+    const handleClick2 = () => {
+        alert('button 2 clicked');
+    }
+
+    const addToFive = (num) => {
+        alert(num + 3);
+    }
+
+    const addToSix = (sum) => {
+        alert(sum - 2);
     }
     
     return (
         <>
-            <h3>React core concept</h3>
-            <Events></Events>
-            <Counter></Counter>
-            <Team></Team>
-            <button onClick={handleReduce}>Click Me</button>
-            <button onClick={() => {alert('button clicked')}}>Click Me</button>
-            <button onClick={()=> addToFive(3)}>third</button>
-            <button onClick={handleClick}>Handle Me</button>
-            <Users></Users>
+            <h3 className='mb-12 text-3xl text-blue-300 font-bold'>React core concept 2</h3>
             <Friends></Friends>
+            <Users></Users>
+            <Team></Team>
+            <Counter></Counter>
+            <button onClick={handleClick1}>Click me</button>
+            <button onClick={handleClick2}>Click me</button>
+            <button onClick= {() => {alert('third clicked')}}>third</button>
+            <button onClick={() => addToFive(3)}>Four</button>
+            <button onClick={() => addToSix(10)}>Five</button>
         </>
     )
 }

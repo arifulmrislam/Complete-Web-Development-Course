@@ -1,12 +1,12 @@
-import {useState} from 'react';
 
-export default function Friend({friend}) {
-    const {name, email, city} = friend;
+const Friend = ({friend}) => {
+    const {name, email} = friend;
     return (
-        <div className="box">
-            <h4>Name:{friend.name}</h4>
-            <p>Email:{friend.email}</p>
-            <p>City:{friend.address.city}</p>
+        <div className='border p-2 m-2 rounded bg-gray-500'>
+            <h4>Name: {name}</h4>
+            <h4>Email: {email}</h4>
         </div>
     );
-} 
+};
+
+export default Friend;

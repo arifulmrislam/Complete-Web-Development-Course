@@ -1,55 +1,45 @@
-// export default function Todo({task,isDone}){
-//     // task = 'Hey bro I change the it';
-//     return(
-//         <>
-//             <li>Task: {task}{isDone}</li>
-//         </>
-//     )
-// }
+import React from 'react';
 
-// //conditional rendering option1
-// export default function Todo({task,isDone}){
-//     if(isDone===true){
-//         return <li>Finished: {task}</li>
-//     }else{
-//         return <li>Work On: {task}</li>
-//     }
-// }
-
-//conditional rendering option2
-// export default function Todo({task,isDone}){
+// conditioner rendering option 1
+// export default function Todo({task, isDone}){
 //     if(isDone){
-//         return <li>Finished: {task}</li>;
-//     }else{
-//         return <li>Work On: {task}</li>
+//         return <li>Finish: {task}</li>
+//     } else{
+//         return <li>Work on: {task}</li>
 //     }
 // }
 
+// conditioner rendering option 2
+// export default function Todo({task, isDone}){
+//     if(isDone){
+//         return <li>Finish: {task}</li>
+//     }
+//         return <li>Work on: {task}</li>
+// }
 
-//conditional rendering option3: ternary operator
-// export default function Todo({task,isDone}){
-//     return(
-//             <li>{isDone ? 'Finished' : 'Work on'} : {task}</li>
+// conditional rendering option 3: ternary operator
+// export default function Todo ({task, isDone}){
+//     return (     
+//         <li>{isDone ? 'Finish' : 'Work on'} : {task}</li>
 //     )
 // }
 
-
-//conditional rendering option 4: &&
-// export default function Todo({task,isDone}){
+//conditional rendering optional 4: &&
+// export default function Todo({task, isDone}){
 //     return(
-//         <li>{task}{isDone && ': Done'}</li>
+//         <li>{task} {isDone && ': Done'}</li>
 //     )
 // }
 
-// //conditional rendering option 5: ||
-// export default function Todo({task,isDone}){
+//conditional rendering optional 5: ||
+// export default function Todo({task, isDone}){
 //     return(
-//         <li>{task}{isDone || ': Do it'}</li>
+//         <li>{task} {isDone || ': Do it'}</li>
 //     )
-// }
+// } 
 
-//conditional rendering option 6
-export default function Todo({task,isDone}){
+//conditional optional rendering 6:
+export default function Todo({task, isDone}){
     let listItem;
     if(isDone){
         listItem = <li>Finish: {task}</li>

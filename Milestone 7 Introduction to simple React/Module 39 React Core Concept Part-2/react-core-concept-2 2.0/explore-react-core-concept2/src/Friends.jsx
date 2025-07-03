@@ -1,25 +1,26 @@
-import './Friends.css';
-import { useState, useEffect } from 'react';
-import Friend from './friend';
 
-export default function Friends(){
-    const [friends, setFriend] = useState([]);
+import { useEffect, useState } from 'react';
+import Friend from './Friend';
 
-    useEffect(() => {
+const Friends = () => {
+    const [friends, setFriends] = useState([]);
+
+    useEffect(()=>{
         fetch('https://jsonplaceholder.typicode.com/users')
         .then(res => res.json())
-        .then(data => setFriend(data))
+        .then(data => setFriends(data));
     },[]);
 
-    return ( 
+    return (
         <div className='box'>
             <h3>Friends: {friends.length}</h3>
-            {
-            friends.map(friend => 
-                <Friend friend={friend}></Friend>
-            )
-        }
+            <div className="grid grid-cols-2 gap-4">
+                {friends.map(friend => 
+                    <Friend key={friend.id} friend={friend}></Friend>
+                )}
+            </div>
         </div>
+    );
+};
 
-    )
-}
+export default Friends;

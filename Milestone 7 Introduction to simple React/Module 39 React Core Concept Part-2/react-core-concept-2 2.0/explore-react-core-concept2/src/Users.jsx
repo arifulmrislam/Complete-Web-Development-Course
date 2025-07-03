@@ -1,20 +1,19 @@
-import { useState, useEffect } from 'react';
 
-export default function Users() {
+import { useState, useEffect } from 'react';
+const Users = () => {
     const [users, setUsers] = useState([]);
 
-    useEffect(function () {
+    useEffect(()=>{
         fetch('https://jsonplaceholder.typicode.com/users')
         .then(res => res.json())
         .then(data => setUsers(data));
     },[]);
 
-    return ( 
+    return (
         <div>
-            <h3>Users:{users.length}</h3>
-            <h3>Users:{users.name}</h3>
-            <h3>Users:{users.length}</h3>
-            <h3>Users:{users.length}</h3>
+            <h3>Users: {users.length}</h3>
         </div>
-    )
-}
+    );
+};
+
+export default Users;
