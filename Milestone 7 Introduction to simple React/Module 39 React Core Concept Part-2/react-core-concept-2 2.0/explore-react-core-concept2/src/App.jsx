@@ -1,4 +1,5 @@
 import './App.css'
+import CoreConcept from './Coreconcept';
 import Counter from './Counter';
 import Friends from './Friends';
 import Team from './Team';
@@ -25,6 +26,7 @@ function App() {
     return (
         <>
             <h3 className='mb-12 text-3xl text-blue-300 font-bold'>React core concept 2</h3>
+            <CoreConcept></CoreConcept>
             <Friends></Friends>
             <Users></Users>
             <Team></Team>

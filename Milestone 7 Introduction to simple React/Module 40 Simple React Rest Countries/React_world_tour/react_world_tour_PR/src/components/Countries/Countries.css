@@ -1,12 +1,7 @@
-.country-container{
+.countries{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-}
-
-.visited{
-    background-color: burlywood;
-    color: black;
 }
 
 .flag-container img{
