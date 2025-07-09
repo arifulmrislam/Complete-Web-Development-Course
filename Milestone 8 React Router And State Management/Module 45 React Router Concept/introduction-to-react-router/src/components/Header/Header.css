@@ -1,0 +1,9 @@
+nav a{
+    margin: 20px;
+}
+
+nav a.active{
+    text-decoration: underline;
+    color: peru;
+    background-color: aquamarine;
+}
