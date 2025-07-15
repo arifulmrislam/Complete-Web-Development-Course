@@ -1,9 +1,10 @@
-
+import {NavLink} from 'react-router-dom';
 
 const Header = () => {
     return (
         <div>
-            <h2>Hello form Header!</h2>
+            <NavLink to='/' className='mr-5'>Home</NavLink>
+            <NavLink to='/login'>Login</NavLink>
         </div>
     );
 };
