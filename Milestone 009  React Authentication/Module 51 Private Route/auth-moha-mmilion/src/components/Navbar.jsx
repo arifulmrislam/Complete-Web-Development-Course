@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const links = <>
@@ -35,7 +35,7 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <NavLink to='/' className='btn btn-ghost text-xl'>daisyUI</NavLink>
+                <Link to='/' className='btn btn-ghost text-xl'>daisyUI</Link>
             </div>
             <div className='navbar-center hidden lg:flex'>
                 <ul className='menu menu-horizontal px-1'>
