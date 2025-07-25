@@ -1,9 +1,10 @@
-import Header from "../components/header";
-import LatestNews from "../components/LatestNews";
-import LeftNavbar from "../components/layoyt-components/LeftNavbar";
-import MainContent from "../components/layoyt-components/MainContent";
-import RightNavbar from "../components/layoyt-components/Rightnavbar";
-import Navbar from "../components/Navbar";
+import { Outlet } from 'react-router-dom';
+import Header from '../components/header';
+import LatestNews from '../components/LatestNews';
+import LeftNavbar from '../components/layoyt-components/LeftNavbar';
+import MainContent from '../components/layoyt-components/MainContent';
+import RightNavbar from '../components/layoyt-components/Rightnavbar';
+import Navbar from '../components/Navbar';
 
 const HomeLayout = () => {
     return (
@@ -21,8 +22,13 @@ const HomeLayout = () => {
                 <aside className='left col-span-3'>
                     <LeftNavbar></LeftNavbar>
                 </aside>
-                <section className='left col-span-6'><MainContent></MainContent></section>
-                <aside className='left col-span-3'><RightNavbar></RightNavbar></aside>
+                <section className='left col-span-6'>
+                    {' '}
+                    <Outlet />
+                </section>
+                <aside className='left col-span-3'>
+                    <RightNavbar></RightNavbar>
+                </aside>
             </main>
         </div>
     );
