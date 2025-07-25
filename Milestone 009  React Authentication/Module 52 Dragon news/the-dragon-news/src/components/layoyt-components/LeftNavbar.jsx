@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 const LeftNavbar = () => {
 
     const [categories, setCategories] = useState([]);
-    console.log(categories);
+    // console.log(categories);
 
     useEffect(() => {
         fetch(' https://openapi.programming-hero.com/api/news/categories')
