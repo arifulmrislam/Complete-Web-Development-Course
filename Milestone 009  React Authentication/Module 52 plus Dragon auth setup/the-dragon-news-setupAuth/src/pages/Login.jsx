@@ -1,6 +1,25 @@
+import { useContext } from 'react';
+import { AuthContext } from '../provider/AuthProvider';
 import { Link } from 'react-router-dom';
 
 const Login = () => {
+    const { signInUser } = useContext(AuthContext);
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+
+        signInUser(email, password)
+        .then(result => {
+            e.target.reset();
+        })
+        .catch((error) => {
+            console.log('Error', error.message);
+            alert(error.code);
+        })
+    }
+
     return (
         <div className='hero bg-white min-h-screen'>
             <div className='hero-content flex-col'>
@@ -8,19 +27,19 @@ const Login = () => {
                     <h1 className='text-3xl font-bold'>Login your account!</h1>
                 </div>
                 <div className='card w-full max-w-sm shrink-0 shadow-2xl'>
-                    <form onSubmit={''} className='card-body'>
+                    <form onSubmit={handleSubmit} className='card-body'>
                         <fieldset className='fieldset'>
                             <label className='label'>Email</label>
                             <input
-                                type='email'
                                 name='email'
+                                type='email'
                                 className='input bg-white border border-blue-500 p-4'
                                 placeholder='Email'
                             />
                             <label className='label'>Password</label>
                             <input
-                                type='password'
                                 name='password'
+                                type='password'
                                 className='input bg-white border border-blue-500 p-4'
                                 placeholder='Password'
                             />
