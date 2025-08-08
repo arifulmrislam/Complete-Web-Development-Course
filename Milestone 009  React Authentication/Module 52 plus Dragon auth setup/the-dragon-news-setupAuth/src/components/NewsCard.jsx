@@ -1,6 +1,7 @@
 import { FaEye, FaStar } from 'react-icons/fa';
 import { FiShare2 } from 'react-icons/fi';
 import { BsBookmark } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 const NewsCard = (props = {}) => {
     const {news} = props || {};
@@ -49,9 +50,9 @@ const NewsCard = (props = {}) => {
                     {details.length > 200 ? (
                         <>
                             {details.slice(0, 200)}...
-                            <span className='text-orange-500 cursor-pointer font-medium ml-1'>
+                            <Link to={`/news/${news.id}`} className='text-orange-500 cursor-pointer font-medium ml-1'>
                                 Read More
-                            </span>
+                            </Link>
                         </>
                     ) : (
                         details

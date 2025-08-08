@@ -6,7 +6,7 @@ const LeftNavbar = () => {
     // console.log(categories);
 
     useEffect(() => {
-        fetch(' https://openapi.programming-hero.com/api/news/categories')
+        fetch('https://openapi.programming-hero.com/api/news/categories')
             .then((res) => res.json())
             .then((data) => setCategories(data.data.news_category));
     }, [])

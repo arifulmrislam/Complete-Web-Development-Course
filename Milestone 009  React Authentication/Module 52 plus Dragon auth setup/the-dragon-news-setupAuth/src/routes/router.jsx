@@ -4,6 +4,7 @@ import CategoryNews from '../pages/CategoryNews';
 import AuthLayout from '../layouts/AuthLayout';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
+import NewsDetails from '../pages/NewsDetails';
 
 const router = createBrowserRouter([
     {
@@ -12,19 +13,31 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '',
-                element: <Navigate to={'/category/01                                                                                                                                  '}></Navigate>
+                element: (
+                    <Navigate
+                        to={
+                            '/category/01                                                                                                                                  '
+                        }
+                    ></Navigate>
+                ),
             },
             {
                 path: '/category/:id',
                 // element: <h2>This is category.</h2>,
-                element:<CategoryNews></CategoryNews>,
-                loader: ({params}) => fetch(`https://openapi.programming-hero.com/api/news/category/${params.id}`),
+                element: <CategoryNews></CategoryNews>,
+                loader: ({ params }) =>
+                    fetch(
+                        `https://openapi.programming-hero.com/api/news/category/${params.id}`
+                    ),
             },
         ],
     },
     {
-        path: '/news',
-        element: <h1>News Layout</h1>
+        path: '/news/:id',
+        element: <NewsDetails></NewsDetails>,
+        loader: ({params}) =>
+            fetch(
+                `https://openapi.programming-hero.com/api/news/${params.id}`),
     },
     {
         path: 'auth',
@@ -36,14 +49,14 @@ const router = createBrowserRouter([
             },
             {
                 path: '/auth/register',
-                element: <Register></Register>
-            }
-        ]
+                element: <Register></Register>,
+            },
+        ],
     },
     {
         path: '*',
-        element: <h1>Error</h1>
-    }
-])
+        element: <h1>Error</h1>,
+    },
+]);
 
 export default router;
