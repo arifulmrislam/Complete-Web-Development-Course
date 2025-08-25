@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+import 'sweetalert2/dist/sweetalert2.min.css';
+
 import {
     createBrowserRouter,
     RouterProvider,
@@ -13,6 +15,7 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <App></App>,
+        loader: () => fetch('http://127.0.0.1:5000/coffee')
     },
     {
         path: "addCoffee",
