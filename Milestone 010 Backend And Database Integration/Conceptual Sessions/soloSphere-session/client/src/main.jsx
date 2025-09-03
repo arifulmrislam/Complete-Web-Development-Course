@@ -4,11 +4,16 @@ import { createRoot } from 'react-dom/client'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
+import Routes from './routes/Routes'
+import { RouterProvider } from 'react-router-dom'
+import AuthProvider from './provider/AuthProvider'
+import { Toaster } from 'react-hot-toast'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <h1 className='font-lato text-3xl'>
-            Welcome to SoloSphere
-        </h1>
+        <AuthProvider>
+            <RouterProvider router={Routes} />
+            <Toaster/>
+        </AuthProvider>
     </React.StrictMode>,
 )
