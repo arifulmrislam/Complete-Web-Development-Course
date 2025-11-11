@@ -1,9 +1,17 @@
-import React from 'react';
+import Banner from '../Banner/Banner';
+import BeMerchant from '../BeMerchant/BeMerchant';
+import ClientLogosMarquee from '../ClientLogosMarquee/ClientLogosMarquee';
+import KeyFeatures from '../KeyFeatures/KeyFeatures';
+import Services from '../Services/Services';
 
 const Home = () => {
     return (
         <div>
-            <h2>This is Home</h2>
+            <Banner></Banner>
+            <Services></Services>
+            <ClientLogosMarquee></ClientLogosMarquee>
+            <KeyFeatures></KeyFeatures>
+            <BeMerchant></BeMerchant>
         </div>
     );
 };
